@@ -1,17 +1,20 @@
 https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg
 https://www.office.com/?auth=1
 
-sudo apt update && sudo apt upgrade
+`sudo apt update && sudo apt upgrade`
 
-sudo apt install tlp smartmontools flatpak samba neovim
-sudo apt install htop lftp intel-microcode
+```bash
+    sudo apt install tlp smartmontools flatpak samba neovim
+    sudo apt install htop lftp intel-microcode
+```
+
 
 Ctrl+h - show hidne files
 > eddy for deb files
 
 ```bash
-sudo add-apt-repository -r ppa:cherokee-webserver/ppa
-sudo apt-key list
+    sudo add-apt-repository -r ppa:cherokee-webserver/ppa
+    sudo apt-key list
 ```
 
 ```bash
@@ -30,7 +33,7 @@ sudo apt autoremove && sudo apt autoclean
 ```
 
 
-dpkg -i ~/Downloads/atom-amd64.deb
+`dpkg -i ~/Downloads/atom-amd64.deb`
 
 [kali linux] apt-get install metasploit-framework
 
@@ -38,21 +41,26 @@ dpkg -i ~/Downloads/atom-amd64.deb
 ## DESKTOP
 ***********
 	Pantheon
+```
 		sudo add-apt-repository ppa:elementary-os/daily
 		sudo apt update
 		sudo apt install elementary-desktop
+```
 	gnome
 	budgie:
+```
 		sudo add-apt-repository ppa:budgie-remix/ppa
 		sudo apt update
 		sudo apt install budgie-desktop
 			sudo apt purge budgie-desktop
 
 		sudo ppa-purge ppa:budgie-remix/ppa
+```
+
 ***************
 ## which samba
 ***************
-sudo apt install samba
+`sudo apt install samba`
 	smb.conf
 	/var/lib/samba/dhcp.conf
 	
@@ -75,12 +83,14 @@ sudo apt install samba
 ******************	
 ## openssh-server
 ******************
+```bash
 	sudo service ssh status
 	sudo vim /etc/ssh/sshd_config
 	sudo service ssh start/ stop
 
 	scp remoteHost:localFile destinationDirectory
 	scp localFile remoteHost:destinationDirectory
+```
 
 *******
 ## ufw

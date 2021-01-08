@@ -1,15 +1,23 @@
+## Linux
+
 https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg
 https://www.office.com/?auth=1
 
+
+### top commands:
+
 `sudo apt update && sudo apt upgrade`
+`sudo apt autoremove && sudo apt autoclean`
+`flatpak update`
 
 ```bash
     sudo apt install tlp smartmontools flatpak samba neovim
     sudo apt install htop lftp intel-microcode
 ```
 
+## Hotkeys
 
-Ctrl+h - show hidne files
+`Ctrl+h` - show hidne files
 > eddy for deb files
 
 ```bash
@@ -35,7 +43,7 @@ sudo apt autoremove && sudo apt autoclean
 
 `dpkg -i ~/Downloads/atom-amd64.deb`
 
-[kali linux] apt-get install metasploit-framework
+[kali linux] `apt-get install metasploit-framework`
 
 ***********
 ## DESKTOP
@@ -95,12 +103,15 @@ sudo apt autoremove && sudo apt autoclean
 *******
 ## ufw
 *******
+```bash
 	sudo ufw status
 	sudo nano[vim] /etc/default/ufw
 		textFile: IPV6 = yes
 	sudo ufw disable
 	sudo ufw enable
+```
 
+```bash
 sudo apt-add-repository ppa:fish-shell/release-3
 sudo apt-get update
 sudo apt-get install fish
@@ -111,6 +122,7 @@ sudo apt-get install fish
 	
 	mkdir -p ~/.config/fish
 	vim ~/.config/fish/config.fish
+```
 
 reboot
 
@@ -138,7 +150,7 @@ sudo apt install conky-all
 ***********
 ## flatpak
 ***********
-
+```bash
 flatpak uninstall --unused
 flatpak remotes
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
@@ -153,6 +165,7 @@ flatpak history
 sudo apt remove app_name
 sudo apt purge app_name
 sudo apt autoremove
+```
 
 *******
 ## try
@@ -193,7 +206,7 @@ lsblk # list block devices
 ## tar
 *******
 
-FONTS
+## FONTS
 	~/.local/share/fonts
 
 *********

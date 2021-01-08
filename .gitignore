@@ -1,5 +1,6 @@
 # my folders
 db/
+wrk/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

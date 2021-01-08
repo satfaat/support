@@ -8,11 +8,11 @@
 [markdown](https://guides.github.com/features/mastering-markdown/)
 
 #### sql:
-    [sqlite](https://www.sqlite.org/index.html)
-    [sqlitebrowser](https://sqlitebrowser.org/)
-    [sqlitetutorial](https://www.sqlitetutorial.net/)
-    [quickstart](https://www.sqlite.org/quickstart.html)
-    [datatype3](https://www.sqlite.org/datatype3.html)
+[sqlite](https://www.sqlite.org/index.html)
+[sqlitebrowser](https://sqlitebrowser.org/)
+[sqlitetutorial](https://www.sqlitetutorial.net/)
+[quickstart](https://www.sqlite.org/quickstart.html)
+[datatype3](https://www.sqlite.org/datatype3.html)
 
 #### tmp:
     http://joxi.ru/
@@ -34,10 +34,12 @@
 ### END
 `.quit`
 
-show data in table:
+```sql
+-- show data in table:
     .headers on
     .mode column
     select * from table_name
+```
 
 ```sql
 CREATE TABLE lnk(

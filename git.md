@@ -1,7 +1,8 @@
-https://your-account.github.io
-https://github.com/satfaat/web.git
-https://learngitbranching.js.org/?locale=ru_RU
-https://gitexplorer.com/
+## Links
+[my git ex](https://your-account.github.io)
+[my git](https://github.com/satfaat/web.git)
+[learngitbranching](https://learngitbranching.js.org/?locale=ru_RU)
+[gitexplorer](https://gitexplorer.com/)
 dev-git
 dev-hm
 
@@ -10,9 +11,9 @@ snapshot снимок
 init = initialize
 
 git commit --help
-'git help -a' and 'git help -g' list available subcommands and some
-concept guides. See 'git help <command>' or 'git help <concept>'
-to read about a specific subcommand or concept.
+> 'git help -a' and 'git help -g' list available subcommands and some
+> concept guides. See 'git help <command>' or 'git help <concept>'
+> to read about a specific subcommand or concept.
 
 To view all of your settings and where they are coming from:
 	git config --list
@@ -21,25 +22,25 @@ To view all of your settings and where they are coming from:
 	git config --global user.email you@example.com 
 	git config --global --edit
 	
-	1) git clone https://github.com/satfaat/backend_test_homework.git
-	2) git status
-	3) git add . || git add --all
+	1. git clone https://github.com/satfaat/backend_test_homework.git
+	2. git status
+	3. git add . || git add --all
 		a. git rm --cached <file> # to unstaged
-	4) git commit -m "My first commit"
+	4. git commit -m "My first commit"
 		a. git commit --amend -m "First commit: new files added"
-	5) git push
+	5. git push
 	
 	git diff
 	git commit -m "Complete first line of dialogue"
 git clone https://github.com/satfaat/web.git
 git status
 
-#use "git restore <file>..." to discard changes in working directory
+> use "git restore <file>..." to discard changes in working directory
 
 git add filename / git commit -a
 	git add -A
 	git add .
-# use "git restore --staged <file>..." to unstage
+> use "git restore --staged <file>..." to unstage
 
 git config --global user.email sf@gmail.com
 git config --global user.name satfaat
@@ -96,11 +97,17 @@ Take info:
 	git show HEAD
 	
 To return to old commit:
+
+```
 	git reset 1234567
 	git reset HEAD program.py
-	# откатили изменения до предыдушего коммита
+```
+> откатили изменения до предыдушего коммита
+```
 	git reset HEAD
-	# откатили изменения во всех файлах до предыдущего коммита
+```
+> откатили изменения во всех файлах до предыдущего коммита
+
 	
 To cancel changes:
 	git reset --hard
@@ -127,13 +134,13 @@ git checkout master
 ********************************
 
 *********
-* ALIAS *
+## ALIAS
 *********
 	alias graph='git log --all --decorate --oneline --graph'
 
 
 **********
-* DOCKER *
+## DOCKER
 **********
 	cd project_name
 		docker build -t docker101tutorial .

@@ -7,28 +7,35 @@ sudo apt install tlp smartmontools flatpak samba neovim
 sudo apt install htop lftp intel-microcode
 
 Ctrl+h - show hidne files
-eddy for deb files
+> eddy for deb files
 
+```bash
 sudo add-apt-repository -r ppa:cherokee-webserver/ppa
 sudo apt-key list
+```
 
+```bash
 apt list --installed
 apt list --upgradable
 sudo apt update / upgrade
 sudo apt update && sudo apt upgrade
 apt-get dist-upgrade
+```
 
+```bash
 sudo apt autoclean
 sudo apt clean
 sudo apt autoremove
 sudo apt autoremove && sudo apt autoclean
+```
+
 
 dpkg -i ~/Downloads/atom-amd64.deb
 
 [kali linux] apt-get install metasploit-framework
 
 ***********
-* DESKTOP *
+## DESKTOP
 ***********
 	Pantheon
 		sudo add-apt-repository ppa:elementary-os/daily
@@ -43,7 +50,7 @@ dpkg -i ~/Downloads/atom-amd64.deb
 
 		sudo ppa-purge ppa:budgie-remix/ppa
 ***************
-* which samba *
+## which samba
 ***************
 sudo apt install samba
 	smb.conf
@@ -66,7 +73,7 @@ sudo apt install samba
 					we need to set up a Samba password for our user account
 	ifconfig [\\192.168.1.43\smbshare][kali]
 ******************	
-* openssh-server *
+## openssh-server
 ******************
 	sudo service ssh status
 	sudo vim /etc/ssh/sshd_config
@@ -76,7 +83,7 @@ sudo apt install samba
 	scp localFile remoteHost:destinationDirectory
 
 *******
-* ufw *
+## ufw
 *******
 	sudo ufw status
 	sudo nano[vim] /etc/default/ufw
@@ -98,13 +105,13 @@ sudo apt-get install fish
 reboot
 
 **********
-* neovim *
+## neovim
 **********
 
 ranger // file manager
 
 ************
-* neofetch *
+## neofetch
 ************
 
 less /etc/os-release
@@ -112,14 +119,14 @@ cat /etc/*release
 uname -a
 
 *******
-* tlp *
+## tlp
 *******
 sudo tlp-stat
 
 sudo apt install conky-all
 
 ***********
-* flatpak *
+## flatpak
 ***********
 
 flatpak uninstall --unused
@@ -138,7 +145,7 @@ sudo apt purge app_name
 sudo apt autoremove
 
 *******
-* try *
+## try
 *******
 	tilix
 
@@ -156,7 +163,7 @@ done ;
 lsblk # list block devices
 
 **********
-* backup *
+## backup
 **********
 	ssh username@yourdomain.com
 	ssh usernm@ipAddress
@@ -173,14 +180,14 @@ lsblk # list block devices
 		mysql -u [username] -p [tablename] < [databasebackupfilename].sql
 
 *******
-* tar *
+## tar
 *******
 
 FONTS
 	~/.local/share/fonts
 
 *********
-* files *
+## files
 *********
 	mv ~/Downloads/*.mp3 ~/Music/
 

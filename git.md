@@ -44,11 +44,13 @@ git add filename / git commit -a
 	git add .
 > use "git restore --staged <file>..." to unstage
 
+```
 git config --global user.email sf@gmail.com
 git config --global user.name satfaat
 ===
 git config --local user.name sf
 git config --local user.email sf@gmail.com
+```
 
 
 To view all of your settings and where they are coming from:
@@ -91,29 +93,12 @@ To view all of your settings and where they are coming from:
 	
 	git reset commit_SHA
 ```
-	
-## DELETE 
-	git branch -d branch_name
-	
-Take info:
+
+### Take info:
 	git log
 	git show HEAD
 	
-To return to old commit:
 
-```
-	git reset 1234567
-	git reset HEAD program.py
-```
-> откатили изменения до предыдушего коммита
-```
-	git reset HEAD
-```
-> откатили изменения во всех файлах до предыдущего коммита
-
-	
-To cancel changes:
-	git reset --hard
 	
 ## BITBUCKET:
 	`ssh -v git@bitbucket.org`
@@ -127,9 +112,23 @@ git remote add alias_name https://github.com/satfaat/web.git
 	git remote remove remote_name
 git fetch
 ```
+### To return to old commit:
+#### откатили изменения до предыдушего коммита
+```
+	git reset 1234567
+	git reset HEAD program.py
+```
+#### откатили изменения во всех файлах до предыдущего коммита
+`git reset HEAD`
+	
+### To cancel changes:
+`git reset --hard`
+
 ===
+```
 git checkout branch_name
 git checkout master
+```
 ********************************
 * git fetch origin             *
 * git status                   *
@@ -146,6 +145,7 @@ git checkout master
 **********
 ## DOCKER
 **********
+```
 	cd project_name
 		docker build -t docker101tutorial .
 
@@ -157,3 +157,4 @@ docker run -dp 80:80 docker/getting-started
 
 docker tag docker101tutorial satfaat/docker101tutorial
 docker push satfaat/docker101tutorial
+```

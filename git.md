@@ -78,6 +78,7 @@ To view all of your settings and where they are coming from:
 	git checkout bugFix
 	
 ## Branches and merging
+```
 	git merge bugFix
 	git checkout bugFix; git merge master
 	
@@ -89,7 +90,7 @@ To view all of your settings and where they are coming from:
 	git branch -f master HEAD~3
 	
 	git reset commit_SHA
-	
+```
 	
 ## DELETE 
 	git branch -d branch_name
@@ -114,9 +115,10 @@ To return to old commit:
 To cancel changes:
 	git reset --hard
 	
-BITBUCKET:
-	ssh -v git@bitbucket.org
-DELET 
+## BITBUCKET:
+	`ssh -v git@bitbucket.org`
+## DELETE
+```
 	git branch -d branch_name
 
 git remote -?
@@ -124,7 +126,7 @@ git remote -v
 git remote add alias_name https://github.com/satfaat/web.git
 	git remote remove remote_name
 git fetch
-
+```
 ===
 git checkout branch_name
 git checkout master
@@ -138,7 +140,7 @@ git checkout master
 *********
 ## ALIAS
 *********
-	alias graph='git log --all --decorate --oneline --graph'
+	`alias graph='git log --all --decorate --oneline --graph'`
 
 
 **********

@@ -3,6 +3,8 @@
 [my git](https://github.com/satfaat/web.git)
 [learngitbranching](https://learngitbranching.js.org/?locale=ru_RU)
 [gitexplorer](https://gitexplorer.com/)
+
+## keywords:
 dev-git
 dev-hm
 
@@ -10,9 +12,9 @@ show commands
 snapshot снимок
 init = initialize
 
-git commit --help
-> 'git help -a' and 'git help -g' list available subcommands and some
-> concept guides. See 'git help <command>' or 'git help <concept>'
+`git commit --help`
+> `git help -a` and `git help -g` list available subcommands and some
+> concept guides. See `git help <command>` or `git help <concept>`
 > to read about a specific subcommand or concept.
 
 To view all of your settings and where they are coming from:

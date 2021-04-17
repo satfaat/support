@@ -2,6 +2,7 @@ https://pypi.org/project/openpyxl/
 https://openpyxl.readthedocs.io/en/stable/
 
 ## start
+python -m venv prjLnk\venv
 cd D:\devgit\pytest
 .\.venv\Scripts\activate
 OR

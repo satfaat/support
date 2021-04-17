@@ -146,7 +146,7 @@ git checkout master
 ## DOCKER
 **********
 ```
-	cd project_name
+    cd project_name
 		docker build -t docker101tutorial .
 
 git clone https://github.com/docker/getting-started.git

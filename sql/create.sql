@@ -1,3 +1,9 @@
+/*
+db cheats
+  table gm_name
+    cmd, desc
+*/
+
 CREATE TABLE IF NOT EXISTS users
 (id INTEGER PRIMARY KEY AUTOINCREMENT,
 group TEXT,

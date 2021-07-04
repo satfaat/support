@@ -1,0 +1,12 @@
+<config>
+    <file
+            source_path="D:\devgit\devops\sys_copy\one"
+            destination_path="D:\devgit\devops\sys_copy\two"
+            file_name="tst.txt"
+    />
+    <file
+            source_path="D:\devgit\devops\sys_copy\one"
+            destination_path="D:\devgit\devops\sys_copy\two"
+            file_name="tst2.txt"
+    />
+</config>

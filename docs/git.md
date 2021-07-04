@@ -17,12 +17,26 @@ init = initialize
 > concept guides. See `git help <command>` or `git help <concept>`
 > to read about a specific subcommand or concept.
 
-To view all of your settings and where they are coming from:
-	git config --list
-	git config --list --show-origin
-	git config --global user.name "Your Name" 
-	git config --global user.email you@example.com 
-	git config --global --edit
+## To view all of your settings and where they are coming from:
+different scopes: local, global and system
+```
+git config --list --local
+git config --list --global
+git config --list --system
+```
+Show the location of Git config files where these settings are defined:
+```
+git config --list --show-origin
+```
+
+```
+git config --list
+git config --list --show-origin
+git config --global user.name "Your Name" 
+git config --global user.email you@example.com 
+git config --global --edit
+```
+
 	
 	1. git clone https://github.com/satfaat/backend_test_homework.git
 	2. git status
@@ -158,3 +172,8 @@ docker run -dp 80:80 docker/getting-started
 docker tag docker101tutorial satfaat/docker101tutorial
 docker push satfaat/docker101tutorial
 ```
+
+
+## Links
+- [](docs.atlassian.com/bitbucketserver/docs-0610/Using+SSH+keys+to+secure+Git+operations)
+- [](https://confluence.atlassian.com/bitbucketserver0610/creating-ssh-keys-989761219.html)

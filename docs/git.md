@@ -44,6 +44,7 @@ git config --global --edit
 	a. git rm --cached <file> # to unstaged
 4. git commit -m "My first commit"
 	a. git commit --amend -m "First commit: new files added"
+3 and 4. git commit -am 'update'
 5. git push
 	
 	git diff

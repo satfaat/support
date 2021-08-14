@@ -51,6 +51,7 @@ git config --global --edit
 		- A - files added to stage
 		- M - modified files
 		- D - deleted files
+    OR git fetch -all
 3. git add . || git add --all
 	a. git rm --cached <file> # to unstaged
 4. git commit -m "My first commit"
@@ -71,14 +72,13 @@ git add filename / git commit -a
 	git add .
 > use "git restore --staged <file>..." to unstage
 
-```
+```bash
 git config --global user.email sf@gmail.com
 git config --global user.name satfaat
 ===
 git config --local user.name sf
 git config --local user.email sf@gmail.com
 ```
-
 
 To view all of your settings and where they are coming from:
 	git config --list --show-origin

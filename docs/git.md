@@ -41,12 +41,12 @@ git config --global --edit
 1. git clone https://github.com/satfaat/backend_test_homework.git
 2. git status
     git fetch -all
-1. git add . || git add --all
+3. git add . || git add --all
 	a. git rm --cached <file> # to unstaged
-1. git commit -m "My first commit"
+4. git commit -m "My first commit"
 	a. git commit --amend -m "First commit: new files added"
 3 and 4. git commit -am 'update'
-1. git push
+5. git push
 	
 	git diff
 	git commit -m "Complete first line of dialogue"

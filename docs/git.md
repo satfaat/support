@@ -18,6 +18,12 @@ init = initialize
 > concept guides. See `git help <command>` or `git help <concept>`
 > to read about a specific subcommand or concept.
 
+```
+git input_command_name -help
+git help --all
+```
+
+
 ## To view all of your settings and where they are coming from:
 different scopes: local, global and system
 ```
@@ -51,8 +57,13 @@ git log  # to see logs
 ********************************
 	
 1. git clone https://github.com/satfaat/backend_test_homework.git
-2. git status
-    git fetch -all
+2. git status or git status --short
+	- status flags:
+		- ?? - untracked
+		- A - files added to stage
+		- M - modified files
+		- D - deleted files
+    OR git fetch -all
 3. git add . || git add --all
 	a. git rm --cached <file> # to unstaged
 4. git commit -m "My first commit"
@@ -62,6 +73,7 @@ git log  # to see logs
 	
 	git diff
 	git commit -m "Complete first line of dialogue"
+	// -m is for message
 git clone https://github.com/satfaat/web.git
 git status
 
@@ -74,6 +86,8 @@ git add filename / git commit -a
 
 
 
+
+>>>>>>> f0a603981bda8f49d17286a1820f85c477a02b01
 
 To view all of your settings and where they are coming from:
 	git config --list --show-origin

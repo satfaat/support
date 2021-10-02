@@ -26,6 +26,8 @@ init = initialize
 ```
 git input_command_name -help
 git help --all
+git log
+git show HEAD
 ```
 
 
@@ -45,7 +47,7 @@ git config --list --show-origin
 ```
 
 ```bash
-git config --global user.name "Your Name"  # sf
+git config --global user.name "YourName"  # sf
 git config --global user.email you@example.com  # sf@gmail.com
 git config --global --edit
 ```
@@ -75,46 +77,55 @@ git log  # to see logs
 		- M - modified files
 		- D - deleted files
     OR git fetch -all
-3. git add . || git add --all
+3. git add . || git add --all || git add filename / git commit -a || git add -A
 	a. git rm --cached <file> # to unstaged
-4. git commit -m "My first commit"
+4. git commit -m "My first commit"  # -m is for message
 	a. git commit --amend -m "First commit: new files added"
 3 and 4. git commit -am 'update'
 5. git push
 	
-	git diff
-	git commit -m "Complete first line of dialogue"
-	// -m is for message
-git clone https://github.com/satfaat/web.git
-git status
+git diff	
 
 > use "git restore <file>..." to discard changes in working directory
-
-git add filename / git commit -a
-	git add -A
-	git add .
 > use "git restore --staged <file>..." to unstage
 
+### DELETE
+```
+	git branch -d branch_name
+
+git remote -?
+git remote -v
+git remote add alias_name https://github.com/satfaat/web.git
+	git remote remove remote_name
+git fetch
+```
+
+### To return to old commit:
+#### откатили изменения до предыдушего коммита
+```
+	git reset 1234567
+	git reset HEAD program.py
+```
+#### откатили изменения во всех файлах до предыдущего коммита
+`git reset HEAD`
+	
+### To cancel changes:
+`git reset --hard`
 
 ## other
 	
-	*** git status ***
-	git diff
-	*** git commit -m "Complete first line of dialogue" ***
-	*** git commit -a -m "some tex" ***
-	git commit -m "popmob"
 	*** git push origin master ***
 	git log
 	git show HEAD
 	git checkout HEAD file_name
 	git reset HEAD file_name
 	
-	git commit
 	git checkout newImage; git commit
 	git checkout -b [your_branch_name]
 		or
 	git branch bugFix
 	git checkout bugFix
+
 	
 ## Branches and merging
 ```
@@ -130,41 +141,14 @@ git add filename / git commit -a
 	
 	git reset commit_SHA
 ```
-
-### Take info:
-	git log
-	git show HEAD
-
-	
-## BITBUCKET:
-	`ssh -v git@bitbucket.org`
-### DELETE
-```
-	git branch -d branch_name
-
-git remote -?
-git remote -v
-git remote add alias_name https://github.com/satfaat/web.git
-	git remote remove remote_name
-git fetch
-```
-### To return to old commit:
-#### откатили изменения до предыдушего коммита
-```
-	git reset 1234567
-	git reset HEAD program.py
-```
-#### откатили изменения во всех файлах до предыдущего коммита
-`git reset HEAD`
-	
-### To cancel changes:
-`git reset --hard`
-
-===
 ```
 git checkout branch_name
 git checkout master
 ```
+	
+## BITBUCKET:
+	`ssh -v git@bitbucket.org`
+
 
 ## Git interface
 

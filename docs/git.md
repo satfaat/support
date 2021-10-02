@@ -1,8 +1,12 @@
+
 ## Links
-[my git ex](https://your-account.github.io)
-[my git](https://github.com/satfaat/web.git)
-[learngitbranching](https://learngitbranching.js.org/?locale=ru_RU)
-[gitexplorer](https://gitexplorer.com/)
+- [my git ex](https://your-account.github.io)
+- [my git](https://github.com/satfaat/web.git)
+- [learngitbranching](https://learngitbranching.js.org/?locale=ru_RU)
+- [gitexplorer](https://gitexplorer.com/)
+- [](docs.atlassian.com/bitbucketserver/docs-0610/Using+SSH+keys+to+secure+Git+operations)
+- [](https://confluence.atlassian.com/bitbucketserver0610/creating-ssh-keys-989761219.html)
+
 
 ## keywords:
 dev-git
@@ -11,6 +15,7 @@ dev-hm
 show commands
 snapshot снимок
 init = initialize
+
 
 ## Info
 `git commit --help`
@@ -25,23 +30,29 @@ git help --all
 
 
 ## To view all of your settings and where they are coming from:
-different scopes: local, global and system
+
+### different scopes: local, global and system
 ```
 git config --list --local
 git config --list --global
 git config --list --system
 ```
-Show the location of Git config files where these settings are defined:
-```
-git config --list --show-origin
-```
 
+### Show the location of Git config files where these settings are defined:
 ```
 git config --list
 git config --list --show-origin
+```
+
+```bash
 git config --global user.name "Your Name"  # sf
 git config --global user.email you@example.com  # sf@gmail.com
 git config --global --edit
+```
+
+```bash
+git config --local user.name sf
+git config --local user.email sf@gmail.com
 ```
 
 ```bash
@@ -85,17 +96,7 @@ git add filename / git commit -a
 > use "git restore --staged <file>..." to unstage
 
 
-
-
->>>>>>> f0a603981bda8f49d17286a1820f85c477a02b01
-
-To view all of your settings and where they are coming from:
-	git config --list --show-origin
-	
-	git config --global user.email "you@example.com"
-	git config --global user.name "Your name"
-	
-	git config --global --edit
+## other
 	
 	*** git status ***
 	git diff
@@ -194,8 +195,3 @@ docker run -dp 80:80 docker/getting-started
 docker tag docker101tutorial satfaat/docker101tutorial
 docker push satfaat/docker101tutorial
 ```
-
-
-## Links
-- [](docs.atlassian.com/bitbucketserver/docs-0610/Using+SSH+keys+to+secure+Git+operations)
-- [](https://confluence.atlassian.com/bitbucketserver0610/creating-ssh-keys-989761219.html)

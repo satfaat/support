@@ -18,17 +18,17 @@ init = initialize
 
 
 ## Info
+
+```bash
+git input_command_name -help
+git help --all
+git show HEAD
+```
+
 `git commit --help`
 > `git help -a` and `git help -g` list available subcommands and some
 > concept guides. See `git help <command>` or `git help <concept>`
 > to read about a specific subcommand or concept.
-
-```
-git input_command_name -help
-git help --all
-git log
-git show HEAD
-```
 
 
 ## To view all of your settings and where they are coming from:
@@ -113,10 +113,7 @@ git fetch
 `git reset --hard`
 
 ## other
-	
-	*** git push origin master ***
-	git log
-	git show HEAD
+
 	git checkout HEAD file_name
 	git reset HEAD file_name
 	

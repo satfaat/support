@@ -12,6 +12,7 @@ show commands
 snapshot снимок
 init = initialize
 
+## Info
 `git commit --help`
 > `git help -a` and `git help -g` list available subcommands and some
 > concept guides. See `git help <command>` or `git help <concept>`
@@ -32,11 +33,22 @@ git config --list --show-origin
 ```
 git config --list
 git config --list --show-origin
-git config --global user.name "Your Name" 
-git config --global user.email you@example.com 
+git config --global user.name "Your Name"  # sf
+git config --global user.email you@example.com  # sf@gmail.com
 git config --global --edit
 ```
 
+```bash
+git remote -v  # to see link to repo
+git log  # to see logs 
+```
+
+********************************
+* git fetch origin             *
+* git status                   *
+* git pull                     *
+* 	or git merge origin/master *
+********************************
 	
 1. git clone https://github.com/satfaat/backend_test_homework.git
 2. git status
@@ -60,13 +72,7 @@ git add filename / git commit -a
 	git add .
 > use "git restore --staged <file>..." to unstage
 
-```
-git config --global user.email sf@gmail.com
-git config --global user.name satfaat
-===
-git config --local user.name sf
-git config --local user.email sf@gmail.com
-```
+
 
 
 To view all of your settings and where they are coming from:
@@ -144,12 +150,13 @@ git fetch
 git checkout branch_name
 git checkout master
 ```
-********************************
-* git fetch origin             *
-* git status                   *
-* git pull                     *
-* 	or git merge origin/master *
-********************************
+
+## Git interface
+
+```bash
+git gui&
+gitk&  # log interface
+```
 
 *********
 ## ALIAS

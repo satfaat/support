@@ -6,3 +6,6 @@ work:
 other:
   - D:\devgit\devops\db
   - D:\devgit\web\prj_lnk\db
+
+cmd:
+    dir /AH  

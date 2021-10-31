@@ -212,9 +212,14 @@ lsblk # list block devices
 *********
 ## files
 *********
-	mv ~/Downloads/*.mp3 ~/Music/
+mv ~/Downloads/*.mp3 ~/Music/
 
 sudo dpkg -i /tmp/erlTKy/LBRY_0.45.1.deb
 
 echo $SHELL
 less /etc/shells
+
+## dir manipulation
+mkdir -p /tmp/test
+ls -R
+cp -R ~/tmp/

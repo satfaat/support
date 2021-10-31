@@ -70,13 +70,14 @@ git log  # to see logs
 ********************************
 	
 1. git clone https://github.com/satfaat/backend_test_homework.git
+2. git fetch -all
 2. git status or git status --short
 	- status flags:
 		- ?? - untracked
 		- A - files added to stage
 		- M - modified files
 		- D - deleted files
-    OR git fetch -all
+    OR git checkout .  # to undo changes 
 3. git add . || git add --all || git add filename / git commit -a || git add -A
 	a. git rm --cached <file> # to unstaged
 4. git commit -m "My first commit"  # -m is for message
@@ -126,6 +127,7 @@ git fetch
 	
 ## Branches and merging
 ```
+git branch --all
 	git merge bugFix
 	git checkout bugFix; git merge master
 	

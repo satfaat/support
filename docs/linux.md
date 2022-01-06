@@ -4,7 +4,7 @@ https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.
 https://www.office.com/?auth=1
 
 
-### top commands:
+### handle packages:
 
 `sudo apt update && sudo apt upgrade`
 `sudo apt autoremove && sudo apt autoclean`
@@ -14,6 +14,14 @@ https://www.office.com/?auth=1
     sudo apt install tlp smartmontools flatpak samba neovim
     sudo apt install htop lftp intel-microcode
 ```
+
+### installing apps
+```bash
+sudo apt install git sqlite3 openssh-client
+
+sudo apt install wget ca-certificates
+```
+
 
 ## Hotkeys
 

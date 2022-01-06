@@ -39,6 +39,10 @@ git config --list --local
 git config --list --global
 git config --list --system
 ```
+## use with WSL
+```bash
+git config --global credential.helper "/mnt/c/.prgenv\Git\mingw64\libexec\git-core/git-credential-manager-core.exe"
+```
 
 ### Show the location of Git config files where these settings are defined:
 ```
@@ -71,19 +75,20 @@ git log  # to see logs
 	
 1. git clone https://github.com/satfaat/backend_test_homework.git
 2. git fetch -all
-2. git status or git status --short
+    1. git pull
+1. git status or git status --short
 	- status flags:
 		- ?? - untracked
 		- A - files added to stage
 		- M - modified files
 		- D - deleted files
     OR git checkout .  # to undo changes 
-3. git add . || git add --all || git add filename / git commit -a || git add -A
+1. git add . || git add --all || git add filename / git commit -a || git add -A
 	a. git rm --cached <file> # to unstaged
-4. git commit -m "My first commit"  # -m is for message
+1. git commit -m "My first commit"  # -m is for message
 	a. git commit --amend -m "First commit: new files added"
 3 and 4. git commit -am 'update'
-5. git push
+1. git push
 	
 git diff	
 

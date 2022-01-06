@@ -74,7 +74,7 @@ git log  # to see logs
 ********************************
 	
 1. git clone https://github.com/satfaat/backend_test_homework.git
-2. git fetch -all
+2. git fetch --all
     1. git pull
 1. git status or git status --short
 	- status flags:

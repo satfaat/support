@@ -1,0 +1,5 @@
+## Chat
+```yml
+chats:
+    - IceChat
+```

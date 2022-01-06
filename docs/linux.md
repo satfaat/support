@@ -220,13 +220,19 @@ lsblk # list block devices
 *********
 ## files
 *********
-	mv ~/Downloads/*.mp3 ~/Music/
+mv ~/Downloads/*.mp3 ~/Music/
 
 sudo dpkg -i /tmp/erlTKy/LBRY_0.45.1.deb
 
 echo $SHELL
 less /etc/shells
 
+<<<<<<< HEAD
+## dir manipulation
+mkdir -p /tmp/test
+ls -R
+cp -R ~/tmp/
+=======
 
 ## PROCESS STATE CODES
        Here are the different values that the s, stat and state output specifiers (header "STAT" or "S") will display to describe the state of a process:
@@ -245,3 +251,4 @@ less /etc/shells
        s    is a session leader
        l    is multi-threaded (using CLONE_THREAD, like NPTL pthreads do)
        +    is in the foreground process group.
+>>>>>>> 789e3909ec7563e64793de5f1495b1b0cfe32ea5

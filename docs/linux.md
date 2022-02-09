@@ -20,6 +20,8 @@ https://www.office.com/?auth=1
 sudo apt install git sqlite3 openssh-client
 
 sudo apt install wget ca-certificates
+curl
+
 ```
 
 

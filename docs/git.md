@@ -72,7 +72,17 @@ git log  # to see logs
 * git pull                     *
 * 	or git merge origin/master *
 ********************************
-	
+
+```bash
+git clone https://github.com/satfaat/backend_test_homework.git
+```
+```bash
+git fetch --all
+```
+or
+```bash
+git pull
+```
 1. git clone https://github.com/satfaat/backend_test_homework.git
 2. git fetch --all
     1. git pull

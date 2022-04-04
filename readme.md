@@ -54,6 +54,3 @@ tags
 link
 description
 group
-
-
-## VS code

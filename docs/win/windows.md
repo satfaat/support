@@ -62,3 +62,8 @@ cleaner:
 
 ### tmp
 C:\Users\uname\AppData\Local\Temp
+
+## Cert
+
+### tool
+cmd: certmgr

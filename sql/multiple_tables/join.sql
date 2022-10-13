@@ -22,3 +22,12 @@ WHERE ProductID = ALL (SELECT ProductID FROM OrderDetails WHERE Quantity = 10);
     FROM ((Orders
     INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)
     INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);
+
+SELECT
+    e.name AS name,
+    SUM(p.value) AS total_payments
+FROM Employees AS e
+    JOIN Payments AS p
+        ON e.id = p.user_id
+GROUP BY e.name
+HAVING SUM(p.value) > 10000 

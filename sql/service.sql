@@ -11,3 +11,10 @@ data_type
 from information_schema.columns
 WHERE table_schema = 'fin_calc'
 and table_name = 'some table name'
+
+
+SELECT * FROM information_schema.tables WHERE table_type = 'BASE TABLE'
+show tables
+
+-- oracle
+SELECT table_name FROM all_tables

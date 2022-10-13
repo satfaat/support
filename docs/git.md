@@ -6,6 +6,8 @@
 - [gitexplorer](https://gitexplorer.com/)
 - [](docs.atlassian.com/bitbucketserver/docs-0610/Using+SSH+keys+to+secure+Git+operations)
 - [](https://confluence.atlassian.com/bitbucketserver0610/creating-ssh-keys-989761219.html)
+- [cli git](https://cli.github.com/)
+- [cli man](https://cli.github.com/manual/)
 
 
 ## keywords:
@@ -75,6 +77,7 @@ git log  # to see logs
 
 ```bash
 git clone https://github.com/satfaat/backend_test_homework.git
+gh repo clone satfaat/pytest
 ```
 ```bash
 git fetch --all

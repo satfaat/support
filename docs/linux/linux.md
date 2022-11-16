@@ -21,7 +21,6 @@ sudo apt install git sqlite3 openssh-client
 
 sudo apt install wget ca-certificates
 curl
-
 ```
 
 

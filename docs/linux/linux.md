@@ -4,6 +4,11 @@ https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.
 https://www.office.com/?auth=1
 
 
+### Setup env
+```bash
+export GOPATH="/dev/go"
+```
+
 ### handle packages:
 
 `sudo apt update && sudo apt upgrade`
@@ -24,7 +29,7 @@ curl
 ```
 
 
-## Hotkeys
+### Hotkeys
 
 `Ctrl+h` - show hidne files
 > eddy for deb files

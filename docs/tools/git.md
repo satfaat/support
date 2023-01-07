@@ -1,3 +1,4 @@
+# Git
 
 ## Links
 - [my git ex](https://your-account.github.io)
@@ -17,6 +18,78 @@ dev-hm
 show commands
 snapshot снимок
 init = initialize
+
+## Generate an SSH key pair
+
+- https://docs.gitlab.com/ee/user/ssh.html
+- C:\Users\u.name\.ssh
+
+```bash
+ssh-keygen -t ed25519 -C "comment"
+```
+
+- verifing connection
+```bash
+ssh -T git@gitlab.name  # yes n enter
+# You should receive a Welcome to GitLab, @username!
+```
+
+## Installing Git
+- https://git-scm.com/download/win
+- or scoop install git
+    - Set Git Credential Manager Core by running: "git config --global credential.helper manager"
+
+## Configure Git
+
+- configuration checking
+```bash
+git config --global --list
+git config -l --show-origin
+```
+- setting up
+```bash
+git config --global user.name "your name"
+git config --global user.email "your email"
+```
+
+- clone
+    - https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html
+
+```bash
+git clone git@gitlab.name/prj name  # ssh
+git clone https://gitlab.name/qa/prj name.git  # https
+```
+
+## errors
+   - ssh: connect to host gitlab.name port 22: Connection timed out
+    fatal: Could not read from remote repository.
+   - fatal: unable to access 'https://gitlab.name/qa/prj.git/': SSL certificate problem: unable to get local issuer certificate
+      - https://docs.gitlab.com/omnibus/settings/ssl/ssl_troubleshooting.html
+```bash
+git config --global http.sslVerify false
+git config --global http.sslbackend schannel
+# http.sslbackend=openssl
+```
+   - schannel: SEC_E_UNTRUSTED_ROOT (0x80090325)
+
+## working with branch
+
+- [create-a-branch-and-make-changes](https://docs.gitlab.com/ee/tutorials/make_your_first_git_commit.html#create-a-branch-and-make-changes)
+- [git-merge](https://www.atlassian.com/ru/git/tutorials/using-branches/git-merge)
+```bash
+git branch --all
+git checkout -b bnpl
+git status 
+git add .
+git commit -m "comment"
+git push origin bnpl
+
+# merge changes
+git checkout main
+git merge bnpl
+git push
+```
+
 
 
 ## Info

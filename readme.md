@@ -1,4 +1,4 @@
-# prj.name = support
+- how to cpllection
 
 #### tmp:
     http://joxi.ru/

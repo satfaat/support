@@ -80,7 +80,8 @@ git config --global http.sslbackend schannel
 git branch --all
 git checkout -b bnpl
 git status 
-git add .
+git add . 
+    if undo git reset
 git commit -m "comment"
 git push origin bnpl
 
